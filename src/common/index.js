@@ -1,121 +1,121 @@
-
+const baseURL = "https://ecoomerbackend.onrender.com/"
 
 const SummaryApi = {
     signUP : {
-        url : `/api/signup`,
+        url : `${baseURL}/api/signup`,
         method : "post"
     },
     signIn : {
-        url : `/api/signin`,
+        url : `${baseURL}/api/signin`,
         method : "post"
     },
     current_user : {
-        url : `/api/user-details`,
+        url : `${baseURL}/api/user-details`,
         method : "get"
     },
     logout_user : {
-        url : `/api/userLogout`,
+        url : `${baseURL}/api/userLogout`,
         method : 'get'
     },
     allUser : {
-        url : `/api/all-user`,
+        url : `${baseURL}/api/all-user`,
         method : 'get'
     },
     updateUser : {
-        url : `/api/update-user`,
+        url : `${baseURL}/api/update-user`,
         method : "post"
     },
     uploadProduct : {
-        url : `/api/upload-product`,
+        url : `${baseURL}/api/upload-product`,
         method : 'post'
     },
     allProduct : {
-        url : `/api/get-product`,
+        url : `${baseURL}/api/get-product`,
         method : 'get'
     },
     updateProduct : {
-        url : `/api/update-product`,
+        url : `${baseURL}/api/update-product`,
         method  : 'post'
     },
     categoryProduct : {
-        url : `/api/get-categoryProduct`,
+        url : `${baseURL}/api/get-categoryProduct`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `/api/category-product`,
+        url : `${baseURL}/api/category-product`,
         method : 'post'
     },
     productDetails : {
-        url : `/api/product-details`,
+        url : `${baseURL}/api/product-details`,
         method : 'post'
     },
     addToCartProduct : {
-        url : `/api/addtocart`,
+        url : `${baseURL}/api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `/api/countAddToCartProduct`,
+        url : `${baseURL}/api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `/api/view-card-product`,
+        url : `${baseURL}/api/view-card-product`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `/api/update-cart-product`,
+        url : `${baseURL}/api/update-cart-product`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `/api/delete-cart-product`,
+        url : `${baseURL}/api/delete-cart-product`,
         method : 'post'
     },
     ClearAddToCartProducts : {
-        url : `/api/clear-cart-product`,
+        url : `${baseURL}/api/clear-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `/api/search`,
+        url : `${baseURL}/api/search`,
         method : 'get'
     },
     filterProduct : {
-        url : `/api/filter-product`,
+        url : `${baseURL}/api/filter-product`,
         method : 'post'
     },
     checkOut:{
-        url : `/api/checkout-payment`,
+        url : `${baseURL}/api/checkout-payment`,
         method : 'post'
     },
     allOrders : {
-        url : `/api/All-orders`,
+        url : `${baseURL}/api/All-orders`,
         method : 'get'
     },
     Order: {
-        url: `/api/orders`,
+        url: `${baseURL}/api/orders`,
         method: 'get'
     },    
     AdminAllOrders : {
-        url : `/api/Admin-All-orders`,
+        url : `${baseURL}/api/Admin-All-orders`,
         method : 'get'
     },    
     allAdminDeliveredOrders : {
-        url : `/api/allAdminDeliveredOrders`,
+        url : `${baseURL}/api/allAdminDeliveredOrders`,
         method : 'get'
     },
     updateOrderStatus : {
-        url : `/api/update-Order-status`,
+        url : `${baseURL}/api/update-Order-status`,
         method : 'post'
     },
     updatePaymentStatus : {
-        url : `/api/update-payment-status`,
+        url : `${baseURL}/api/update-payment-status`,
         method : 'post'
     }
     ,
     conformOrder : {
-        url : `/api/conform-order`,
+        url : `${baseURL}/api/conform-order`,
         method : 'post'
     },
     verifyPayment : {
-        url : `/api/verify-payment`,
+        url : `${baseURL}/api/verify-payment`,
         method : 'post'
     }
 }
