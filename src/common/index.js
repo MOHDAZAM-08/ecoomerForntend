@@ -1,4 +1,4 @@
-const baseURL = "https://ecoomerbackend.onrender.com/"
+const baseURL = 'https://ecoomerbackend.onrender.com';
 
 const SummaryApi = {
     signUP : {
@@ -108,8 +108,7 @@ const SummaryApi = {
     updatePaymentStatus : {
         url : `${baseURL}/api/update-payment-status`,
         method : 'post'
-    }
-    ,
+    },
     conformOrder : {
         url : `${baseURL}/api/conform-order`,
         method : 'post'
@@ -120,5 +119,4 @@ const SummaryApi = {
     }
 }
 
-
-export default SummaryApi
+export default SummaryApi;
