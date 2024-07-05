@@ -8,7 +8,7 @@ import displayINRCurrency from '../helpers/displayCurrency';
 const YourOrder = () => {
     const user = useSelector(state => state?.user?.user);
 
-    console.log("user",user._id);
+    // console.log("user",user._id);
 
     const [status, setStatus] = useState('Payment');
     const [data, setData] = useState([]);

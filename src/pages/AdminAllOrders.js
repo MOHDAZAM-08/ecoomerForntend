@@ -51,7 +51,7 @@ const AdminAllOrders = () => {
         setSelectedOrder(order);
     };
 
-    console.log("admin data", data);
+    // console.log("admin data", data);
 
 
     if (!data.length) {

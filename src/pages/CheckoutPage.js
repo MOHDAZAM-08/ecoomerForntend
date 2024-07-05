@@ -44,9 +44,9 @@ export default function CheckoutPage() {
         quantity: product.quantity,
     }));
 
-    console.log("formdata", formattedProducts);
+    // console.log("formdata", formattedProducts);
 
-    console.log("form",formData);
+    // console.log("form",formData);
 
 
 

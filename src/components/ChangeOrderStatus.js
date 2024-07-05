@@ -8,12 +8,12 @@ const ChangeOrderStatus = ({ orderId, currentStatus, onClose, callFunc }) => {
 
     const handleOnChangeSelect = (e) => {
         setOrderStatus(e.target.value);
-        console.log("Selected status:", e.target.value); // Log selected status for debugging
+        // console.log("Selected status:", e.target.value); // Log selected status for debugging
     };
 
     const updateOrderStatus = async () => {
         try {
-            console.log("Sending orderId:", orderId); // Log orderId for debugging
+            // console.log("Sending orderId:", orderId); // Log orderId for debugging
 
             const fetchResponse = await fetch(SummaryApi.updateOrderStatus.url, {
                 method: SummaryApi.updateOrderStatus.method,
@@ -37,14 +37,14 @@ const ChangeOrderStatus = ({ orderId, currentStatus, onClose, callFunc }) => {
                 toast.error(responseData.message);
             }
 
-            console.log("Order status updated", responseData);
+            // console.log("Order status updated", responseData);
         } catch (error) {
             console.error("Error updating order status:", error);
             toast.error("Failed to update order status");
         }
     };
 
-    console.log("orderId in ChangeOrderStatus:", orderId); // Log orderId for debugging
+    // console.log("orderId in ChangeOrderStatus:", orderId); // Log orderId for debugging
 
     return (
         <div className='fixed top-0 bottom-0 left-0 right-0 w-full h-full z-10 flex justify-between items-center bg-gray-800 bg-opacity-50 rounded-lg'>

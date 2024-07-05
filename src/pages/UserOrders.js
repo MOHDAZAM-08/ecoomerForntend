@@ -46,7 +46,7 @@ const UserOrders = () => {
   ) : [];
 
 
-  console.log("productsWithStatus", orders);
+  // console.log("productsWithStatus", orders);
 
   useEffect(() => {
     fetchData();
